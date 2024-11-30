@@ -1,0 +1,19 @@
+The `-force_cpusubtype_ALL` option is invalid on Apple Silicon. This
+patch removes the option for Darwin systems.
+---
+ configure.ac | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+--- a/configure.ac
++++ b/configure.ac
+@@ -204,6 +205,6 @@ case $host in
+	*-*-darwin*)
+-		DEBUG="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -O0 -fsigned-char"
+-		CFLAGS="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -O3 -ffast-math -fsigned-char"
+-		PROFILE="-DDARWIN -fno-common -force_cpusubtype_ALL -Wall -g -pg -O3 -ffast-math -fsigned-char";;
++		DEBUG="-DDARWIN -fno-common -Wall -g -O0 -fsigned-char"
++		CFLAGS="-DDARWIN -fno-common -Wall -g -O3 -ffast-math -fsigned-char"
++		PROFILE="-DDARWIN -fno-common -Wall -g -pg -O3 -ffast-math -fsigned-char";;
+	*-*-os2*)
+		# Use -W instead of -Wextra because gcc on OS/2 is an old version.

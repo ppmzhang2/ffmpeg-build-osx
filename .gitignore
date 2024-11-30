@@ -1,0 +1,38 @@
+# general things to ignore
+.DS_Store
+build_contrib/
+.cache/
+*.so
+*~
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.out
+
+# IDE
+.vscode/
+
+# Downloaded 3rd party libraries (not git submodules)
+contrib/theora/
+contrib/yasm/
+contrib/enca/
+contrib/pkgcfg/
+contrib/opus/
+contrib/vorbis/
+contrib/iconv/
+contrib/gettext/
+contrib/fontconfig/
+contrib/zlib/
+contrib/nasm/
+contrib/snappy/
+contrib/ass/
+contrib/freetype/
+contrib/fribidi/
+contrib/harfbuzz/
+contrib/expat/
+contrib/x265/
+contrib/ogg/
+contrib/vidstab/

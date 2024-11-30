@@ -1,0 +1,20 @@
+[submodule "ffmpeg"]
+	path = ffmpeg
+	url = https://git.ffmpeg.org/ffmpeg.git
+	branch = master
+[submodule "contrib/x264"]
+	path = contrib/x264
+	url = https://code.videolan.org/videolan/x264.git
+	branch = master
+[submodule "contrib/lame"]
+	path = contrib/lame
+	url = https://github.com/rbrito/lame.git
+	branch = origin
+[submodule "contrib/libvpx"]
+	path = contrib/libvpx
+	url = https://github.com/webmproject/libvpx.git
+	branch = main
+[submodule "contrib/aom"]
+	path = contrib/aom
+	url = https://aomedia.googlesource.com/aom.git
+	branch = main
